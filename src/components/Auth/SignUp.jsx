@@ -15,7 +15,7 @@ function SignUp() {
       alert("HR Account Created Successfully")
       navigate('/');
     } catch (error) {
-      console.error('Error signing up:', error);
+      alert('Error signing up:', error);
     }
   };
 
