@@ -45,7 +45,7 @@ function HRDashboard() {
         return;
       }
       const response = await Axios.post(
-        `${window.location.origin}/addemployees`,
+        `http://localhost:5000/addemployees`,
         { name, role, email },
         {
           headers: {

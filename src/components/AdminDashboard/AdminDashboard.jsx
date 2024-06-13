@@ -24,7 +24,7 @@ function AdminDashboard() {
         return;
       }
       const response = await Axios.get(
-        `${window.location.origin}/employees/pending`,
+        "http://localhost:5000/employees/pending",
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -48,7 +48,7 @@ function AdminDashboard() {
         return;
       }
       await Axios.put(
-        `${window.location.origin}/employees/${id}/approve`,
+        `http://localhost:5000/employees/${id}/approve`,
         {},
         {
           headers: {
@@ -73,7 +73,7 @@ function AdminDashboard() {
         return;
       }
       await Axios.put(
-        `${window.location.origin}employees/${id}/reject`,
+        `http://localhost:5000/employees/${id}/reject`,
         {},
         {
           headers: {
