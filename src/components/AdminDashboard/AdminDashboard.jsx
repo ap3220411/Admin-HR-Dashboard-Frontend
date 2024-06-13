@@ -24,7 +24,7 @@ function AdminDashboard() {
         return;
       }
       const response = await Axios.get(
-        "http://localhost:5000/employees/pending",
+        "https://admin-hr-dashboard-backend.onrender.com/employees/pending",
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -48,7 +48,7 @@ function AdminDashboard() {
         return;
       }
       await Axios.put(
-        `http://localhost:5000/employees/${id}/approve`,
+        `https://admin-hr-dashboard-backend.onrender.com/employees/${id}/approve`,
         {},
         {
           headers: {
@@ -73,7 +73,7 @@ function AdminDashboard() {
         return;
       }
       await Axios.put(
-        `http://localhost:5000/employees/${id}/reject`,
+        `https://admin-hr-dashboard-backend.onrender.com/employees/${id}/reject`,
         {},
         {
           headers: {

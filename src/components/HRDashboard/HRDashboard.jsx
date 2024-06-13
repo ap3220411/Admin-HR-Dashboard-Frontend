@@ -23,7 +23,7 @@ function HRDashboard() {
         navigate("/");
         return;
       }
-      const response = await Axios.get("http://localhost:5000/employees", {
+      const response = await Axios.get("https://admin-hr-dashboard-backend.onrender.com/employees", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -45,7 +45,7 @@ function HRDashboard() {
         return;
       }
       const response = await Axios.post(
-        `http://localhost:5000/addemployees`,
+        "https://admin-hr-dashboard-backend.onrender.com/addemployees",
         { name, role, email },
         {
           headers: {
