@@ -106,13 +106,13 @@ function AdminDashboard() {
             <div>
               <button
                 className="admin-approve-button"
-                onClick={() => handleApproveEmployee(employee._id)} // Pass employee._id to handleApproveEmployee
+                onClick={() => handleApproveEmployee(employee._id)} 
               >
                 Approve
               </button>
               <button
                 className="admin-reject-button"
-                onClick={() => handleRejectEmployee(employee._id)} // Pass employee._id to handleRejectEmployee
+                onClick={() => handleRejectEmployee(employee._id)}
               >
                 Reject
               </button>

@@ -115,6 +115,7 @@ function HRDashboard() {
             <div>
               <h5>Name:-  {employee.name}</h5> <h5>Technology:-  {employee.role}</h5>
               <h6>Email :-  {employee.email}</h6>
+              <h6>Status :-  {employee.status}</h6>
             </div>
           </li>
         ))}

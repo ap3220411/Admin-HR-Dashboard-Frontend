@@ -26,9 +26,6 @@ function Layout({ children }) {
           <li className="nav-item">
             <Link className="nav-link btn btn-secondary text-white mx-1" to="/signup">Sign Up</Link>
           </li>
-          <li className="nav-item">
-            <Link className="nav-link btn btn-secondary text-white mx-1" to="/signup/Admin"> Admin SignUp</Link>
-          </li>
         </>
       );
     } else {
