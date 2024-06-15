@@ -5,13 +5,13 @@ import './AuthStyles.css';
 
 function SignUp() {
   const navigate = useNavigate(); 
-  const [username, setUsername] = useState('');
+  const [email, setemail] = useState('');
   const [password, setPassword] = useState('');
   const [role, setRole] = useState('');
 
   const handleSignUp = async () => {
     try {
-      await axios.post('/auth/signup', { username, password, role });
+      await axios.post('/auth/signup', { email, password, role });
       alert(" Account Created Successfully")
       navigate('/');
     } catch (error) {
@@ -27,9 +27,9 @@ function SignUp() {
           <input
             type="text"
             className="form-control"
-            placeholder="Username"
-            value={username}
-            onChange={(e) => setUsername(e.target.value)}
+            placeholder="email"
+            value={email}
+            onChange={(e) => setemail(e.target.value)}
           />
         </div>
         <div className="form-group">
